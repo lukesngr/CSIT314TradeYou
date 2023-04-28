@@ -61,5 +61,6 @@ class Payment(models.Model):
 class Notification(models.Model):
     user = models.ForeignKey(TradeYouUser, on_delete=models.CASCADE)
     professional = models.ForeignKey(TradeYouProfessional, on_delete=models.CASCADE)
-    message = models.CharField(max_length=50, null=True, blank=True)
     dateTime = models.DateField()
+    message = models.CharField(max_length=50, null=True, blank=True)
+    
